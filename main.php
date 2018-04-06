@@ -16,5 +16,12 @@ $emp->sal = 50000;
 $emp->desig = 'Drupal Developer';
 
 echo json_encode($emp);
+echo "<br>";
+$json_data = '{"pc":"swinn","cc":"tmi","nc":11}';
+$json_decoded = json_decode($json_data);
+echo "<pre>";
+var_dump($json_decoded);
+echo "</pre>";
+echo $json_decoded->pc;
 
 ?>
